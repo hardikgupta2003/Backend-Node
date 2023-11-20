@@ -1,7 +1,8 @@
-const Todo= require("../models/Todo");
+const Todo = require("../models/Todo");
 
 //define route handler
-exports.CreateTodo= async( req,res )=>{
+
+exports.createTodo= async( req,res )=>{
     try{
         //extract title and desc from req body
         const {title,description}=req.body;
@@ -21,6 +22,7 @@ exports.CreateTodo= async( req,res )=>{
     catch(err){
         console.error(err);
         console.log(err);
+        console.log("error aagya boss");
         res.status(500)
         .json({
             success:false,

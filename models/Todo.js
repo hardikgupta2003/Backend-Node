@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 // description of your data is schema
 const todoSchema=new mongoose.Schema(
     {
-        tilte:{
+        title:{
             type:String,
             required:true,
             maxLength:50,
